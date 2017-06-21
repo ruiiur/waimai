@@ -1,0 +1,43 @@
+.tabs {
+  height: 85px !important; }
+
+.bar.bar-color {
+  border-color: #ff7403;
+  background-color: #ff7403;
+  background-image: linear-gradient(0deg, #111, #111 50%, transparent 50%);
+  color: #fff; }
+
+.button {
+  color: #fff; }
+
+.tab-nav .choose-list {
+  height: 50px; }
+  .tab-nav .choose-list li {
+    width: 50%;
+    float: left;
+    padding: 10px 0;
+    color: #666;
+    text-align: center;
+    border-bottom: 1px solid #666; }
+    .tab-nav .choose-list li.active {
+      color: #ff7403;
+      border-bottom: 2px solid #ff7403; }
+
+.food-choose, .food-type {
+  display: inline-block;
+  vertical-align: top; }
+
+.food-choose {
+  width: 25%; }
+  .food-choose .food-list li {
+    height: 44px;
+    font-size: 10px; }
+
+.food-type {
+  width: 75%; }
+
+input {
+  border: 1px solid #666;
+  height: 30px; }
+
+/*# sourceMappingURL=main.css.map */

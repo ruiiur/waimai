@@ -1,0 +1,41 @@
+<ion-view view-title="外卖">
+    <ion-nav-buttons side="right">
+        <button class="button ">
+            发起拼单
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="tab-nav">
+            <ul class="choose-list" ng-init='activeTab=1'>
+                <li ng-class='{active:activeTab==1}' ng-click='activeTab=1'>菜品</li>
+                <li ng-class='{active:activeTab==2}' ng-click='activeTab=2'>评价</li>
+            </ul>
+            <div class="tab-con">
+                <div ng-show='activeTab==1'>
+                    <div class="food-choose">
+                        <label class="item item-input">
+                            <i class="icon ion-search placeholder-icon"></i>
+                            <input type="text" placeholder="Search">
+                        </label>
+                        <ul class="food-list">
+                            <!--<li class="item" ng-class='{active:activeTabF==1}' ng-click='activeTabF=1'>套餐</li>-->
+                            <!--<li class="item" ng-class='{active:activeTabF==2}' ng-click='activeTabF=2'>法式小馒头</li>-->
+                            <!--<li class="item" ng-class='{active:activeTabF==3}' ng-click='activeTabF=3'>意大利餐</li>-->
+                            <!--<li><a href="#/order#taocan">套餐</a></li>-->
+                            <!--<li><a href="#/order#fashi">法式小面包</a></li>-->
+                            <!--<li><a href="#/order#yida">意大利餐</a></li>-->
+                            <li class="item">套餐</li>
+                            <li class="item">法式小面包</li>
+                            <li class="item">意大利餐</li>
+                        </ul>
+                    </div><div class="food-type" ui-view="menu">
+                    <!--<div ng-show='activeTabF==1'>这是套餐的内容</div>-->
+                    <!--<div ng-show='activeTabF==2'>这是法式小馒头的内容</div>-->
+                    <!--<div ng-show='activeTabF==3'>这是意大利餐的内容</div>-->
+                    </div>
+                </div>
+                <div ng-show='activeTab==2'>红尘客栈、牛仔很忙、给我一首歌的时间、听妈妈的话</div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
